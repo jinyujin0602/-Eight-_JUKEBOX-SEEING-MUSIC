@@ -45,7 +45,7 @@ function checkStatus(){
  //단어 불러오기
  //이 글자를 작성해야 점수 획득 = 아마도 이곳에 티쳐블 머신 코드 넣으면 될 듯?
 function getWords(){
-    words =['Hello', 'Banana', 'Apple', 'cherry'];
+    words =['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅍ', 'ㅎ'];
     buttonChange('게임시작')
 }
 

@@ -24,6 +24,11 @@
      font-size: 80px;
      color: #3b5999;
  }
+
+ .t {
+    margin-top: 1rem;
+    color: #fff;
+}
  
  .word-input-box {
      margin-top: 2rem;
@@ -55,4 +60,6 @@
      background: #ccc;
      cursor: not-allowed;
  }
+ 
+ 
 
