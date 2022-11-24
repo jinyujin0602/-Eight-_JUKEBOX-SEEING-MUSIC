@@ -16,6 +16,7 @@
         <h1>지화 마스터 : 한국어ver</h1>
     </div>
     <div class = "t">Teachable Machine Image Model</div>
+    <img src="/jihwa.png" width="400px">
     <!-- <button type="button" onclick="init()">Start</button> -->
     <div id="webcam-container"></div>
     <div id="label-container"></div>
@@ -29,7 +30,7 @@
         const URL = "./my_model/";
 
         let model, webcam, labelContainer, maxPredictions;
-
+        
         // Load the image model and setup the webcam
         async function init() {
             const modelURL = URL + "model.json";
@@ -44,7 +45,7 @@
 
             // Convenience function to setup a webcam
             const flip = true; // whether to flip the webcam
-            webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+            webcam = new tmImage.Webcam(400, 400, flip); // width, height, flip
             await webcam.setup(); // request access to the webcam
             await webcam.play();
             window.requestAnimationFrame(loop);
@@ -56,7 +57,7 @@
                 labelContainer.appendChild(document.createElement("div"));
             }
         }
-
+        
         async function loop() {
             webcam.update(); // update the webcam frame
             await predict();
@@ -75,13 +76,14 @@
         }
         init();
     </script>
+    
 
     <div class="word-display">
         ㄱ
     </div>
-    <div class="word-input-box">
+    <!-- <div class="word-input-box">
         <input type="text" class="word-input">
-    </div>
+    </div> -->
     <div class="game-info">
         <div>
             남은시간:<span class="time">0</span>초
