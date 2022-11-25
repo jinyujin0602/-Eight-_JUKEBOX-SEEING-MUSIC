@@ -29,10 +29,22 @@
     margin-top: 1rem;
     color: #fff;
 }
+
+.canvas {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+  }
  
- /* .word-input-box {
+
+.img {
+    float: right;
+    box-sizing: border-box;
+}  
+
+ .word-input-box {
      margin-top: 2rem;
- } */
+ }
  .word-input {
      padding: 0.5rem;
      width:300px;

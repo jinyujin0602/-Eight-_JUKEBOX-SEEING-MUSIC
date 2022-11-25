@@ -45,7 +45,7 @@ function checkStatus(){
  //단어 불러오기
  //이 글자를 작성해야 점수 획득 = 아마도 이곳에 티쳐블 머신 코드 넣으면 될 듯?
 function getWords(){
-    words =['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅍ', 'ㅎ'];
+    words =[ 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅍ', 'ㅎ'];
     buttonChange('게임시작')
 }
 
@@ -83,3 +83,47 @@ function buttonChange(text){
     text === '게임시작' ? button.classList.remove('loading') : button.classList.add('loading')
 }
 
+
+let video;
+
+let classifier;
+
+let label = '기다리세요...';
+
+function preload(){
+  classifier =
+ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/pAZ9EKSnhk/model.json");
+}
+
+function setup(){
+  createCanvas(640, 480);
+  video = createCapture(VIDEO);
+  video.hide();
+  
+  classifiyVideo();
+}
+
+function classifiyVideo(){
+  classifier.classify(video, gotResult);
+}
+
+function draw() {
+  background(0);
+  image(video,0,0);
+  
+  textSize(32);
+  textAlign(CENTER,CENTER);
+  fill(255);
+  text(label, width/2, height -16);
+}
+
+function gotResult(error, results){
+  if(error){
+    console.log(error);
+    return;
+  }
+  console.log(results[0].label);
+  label = results[0].label;
+  
+  classifiyVideo()
+}
