@@ -9,7 +9,7 @@
 위에서 순서대로 Run time을 누른다.</li>
 <li>"/content/gdrive/MyDrive/본인이 설정하고 싶은 이름.wav "이 위치에 가사로 생성된 음악이 있을 것이다.</li>
 <li>가사를 바꾸고 싶다면 your_lyrics = """에서 원하는 가사를 작성하는 것을 추천한다.</li>
-<li>다양한 장르의 음악 추출을 하고 싶다면 "힙합 팝 펑크 디스코" 중 하나로 변경하거나 jukebox/jukebox/data/ids/v2_genre_ids.txt을 참고</li>
+<li>다양한 장르의 음악 추출을 하고 싶다면 "힙합 팝 펑크 디스코" 중 하나로 변경하거나 jukebox/jukebox/data/ids/v2_genre_ids.txt을 참고 (github 링크: https://github.com/openai/jukebox)</li>
 <li>다양한 가수의 음악 추출을 하고 싶다면 jukebox/jukebox/data/ids/v2_artist_ids.txt 참고</li>
 
 <h3>[본 프로젝트를 실행하는 순서 - Seeing Music]</h3>
