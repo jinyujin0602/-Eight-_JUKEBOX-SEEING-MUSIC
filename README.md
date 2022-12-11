@@ -15,5 +15,5 @@
 
 <h3>[본 프로젝트를 실행하는 순서 - Seeing Music]</h3>
 
-8. 추출된 음악 파일을 https://creatability.withgoogle.com/seeing-music/사이트를 들어가서 Choose your own file에 넣는다.
+8. 추출된 음악 파일을 https://creatability.withgoogle.com/seeing-music/ 사이트를 들어가서 Choose your own file에 넣는다.
 9. 이제 너만의 가사로 다양한 장르와 가수로 추출된 음악 파일이 DDSF를 이용한 시각화로 보일 것이다.
